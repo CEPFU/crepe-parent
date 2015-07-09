@@ -1,0 +1,8 @@
+# IntelliJ IDEA files and directories
+.idea/
+*.iml
+
+# Crepe Directories
+profiles/
+config/
+sources/
