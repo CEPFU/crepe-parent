@@ -1,0 +1,30 @@
+[submodule "ems"]
+	path = ems
+	url = git@github.com:CEPFU/ems.git
+[submodule "sencha-front"]
+	path = sencha-front
+	url = git@github.com:CEPFU/sencha-front.git
+[submodule "io-adapters"]
+	path = io-adapters
+	url = git@github.com:CEPFU/io-adapters.git
+[submodule "yahoo-importer"]
+	path = yahoo-importer
+	url = git@github.com:CEPFU/yahoo-importer.git
+[submodule "dwd-importer"]
+	path = dwd-importer
+	url = git@github.com:CEPFU/dwd-importer.git
+[submodule "importer"]
+	path = importer
+	url = git@github.com:CEPFU/importer.git
+[submodule "importer_launcher"]
+	path = importer_launcher
+	url = git@github.com:CEPFU/importer_launcher.git
+[submodule "nio-tools"]
+	path = nio-tools
+	url = git@github.com:CEPFU/nio-tools.git
+[submodule "rest-endpoint"]
+	path = rest-endpoint
+	url = git@github.com:CEPFU/rest-endpoint.git
+[submodule "json"]
+	path = json
+	url = git@github.com:CEPFU/json.git
