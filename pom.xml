@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.fu-berlin.agdb</groupId>
+    <artifactId>crepe-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Parent project for all crepe subprojects</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>ems</module>
+        <module>io-adapters</module>
+        <module>nio-tools</module>
+        <module>importer</module>
+        <module>yahoo-importer</module>
+        <module>dwd-importer</module>
+        <module>importer_launcher</module>
+        <module>json</module>
+        <module>rest-endpoint</module>
+    </modules>
+</project>
