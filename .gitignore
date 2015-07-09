@@ -1,8 +1,16 @@
-# IntelliJ IDEA files and directories
+# IntelliJ IDEA
 .idea/
 *.iml
 
+# Eclipse
+.settings/
+.project
+.classpath
+
+# Maven Directories
+/target/
+
 # Crepe Directories
-profiles/
-config/
-sources/
+/profiles/
+/config/
+/sources/
