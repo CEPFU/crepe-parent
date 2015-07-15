@@ -28,3 +28,6 @@
 [submodule "json"]
 	path = json
 	url = git@github.com:CEPFU/json.git
+[submodule "importer_database"]
+	path = importer_database
+	url = git@github.com:CEPFU/importer_database
