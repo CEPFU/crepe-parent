@@ -25,5 +25,6 @@
         <module>importer_launcher</module>
         <module>json</module>
         <module>rest-endpoint</module>
+        <module>algebra</module>
     </modules>
 </project>

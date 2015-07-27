@@ -30,4 +30,7 @@
 	url = git@github.com:CEPFU/json.git
 [submodule "importer_database"]
 	path = importer_database
-	url = git@github.com:CEPFU/importer_database
+	url = git@github.com:CEPFU/importer_database.git
+[submodule "algebra"]
+	path = algebra
+	url = git@github.com:CEPFU/algebra.git
