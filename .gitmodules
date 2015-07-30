@@ -34,3 +34,6 @@
 [submodule "algebra"]
 	path = algebra
 	url = git@github.com:CEPFU/algebra.git
+[submodule "docker-database"]
+	path = docker-database
+	url = git@github.com:CEPFU/docker-database.git
