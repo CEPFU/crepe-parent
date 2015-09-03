@@ -37,3 +37,6 @@
 [submodule "docker-database"]
 	path = docker-database
 	url = git@github.com:CEPFU/docker-database.git
+[submodule "ionic-front"]
+	path = ionic-front
+	url = git@github.com:CEPFU/ionic-front.git

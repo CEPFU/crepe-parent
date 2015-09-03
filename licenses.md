@@ -17,7 +17,7 @@ Licenses of the libraries used in this project.
 - Apache Commons Net, Log4j: Apache 2.0
 
 
-## EMS
+## EMS (Apache 2.0)
 
 - Sun tools.jar: **_Oracle but we don't redistribute it, so it should be fine...?_**
 - Spring, Apache Camel, Log4j, Commons-CLI: Apache 2.0
