@@ -17,7 +17,11 @@ Licenses of the libraries used in this project.
 - Apache Commons Net, Log4j: Apache 2.0
 
 
+<<<<<<< HEAD
 ## EMS
+=======
+## EMS (Apache 2.0)
+>>>>>>> refactor-structure
 
 - Sun tools.jar: **_Oracle but we don't redistribute it, so it should be fine...?_**
 - Spring, Apache Camel, Log4j, Commons-CLI: Apache 2.0

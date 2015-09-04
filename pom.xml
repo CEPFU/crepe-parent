@@ -6,14 +6,134 @@
 
     <groupId>de.fu-berlin.agdb</groupId>
     <artifactId>crepe-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <description>Parent project for all crepe subprojects</description>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
+
+    <licenses>
+        <license>
+            <name>The MIT License</name>
+            <url>https://github.com/CEPFU/crepe-parent/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/CEPFU/crepe-parent</url>
+    </scm>
+
+    <name>Crepe Parent Project</name>
+    <description>Parent project for all crepe subprojects</description>
+    <url>https://github.com/CEPFU</url>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jackson.version>2.6.0-rc2</jackson.version>
+        <postgis.version>1.3.3</postgis.version>
+        <hibernate.version>4.3</hibernate.version>
+        <hibernate-core.version>${hibernate.version}.10.Final</hibernate-core.version>
+        <postgresql.version>9.4-1201-jdbc41</postgresql.version>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerId>javac-with-errorprone</compilerId>
+                    <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.plexus</groupId>
+                        <artifactId>plexus-compiler-javac-errorprone</artifactId>
+                        <version>2.5</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <visitors>
+                        InconsistentAnnotations,NoteUnconditionalParamDerefs,FindNullDeref,FindNullDerefsInvolvingNonShortCircuitEvaluation
+                    </visitors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>run-findbugs-fornullchecks</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.8</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.shared</groupId>
+                        <artifactId>maven-shared-jar</artifactId>
+                        <version>1.1</version>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>org.apache.bcel</groupId>
+                                <artifactId>bcel</artifactId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.google.code.findbugs</groupId>
+                        <artifactId>bcel-findbugs</artifactId>
+                        <version>6.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.0.30-beta</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <modules>
         <module>ems</module>
@@ -22,7 +142,8 @@
         <module>importer</module>
         <module>yahoo-importer</module>
         <module>dwd-importer</module>
-        <module>importer_launcher</module>
+        <module>importer-launcher</module>
+        <module>importer-database</module>
         <module>json</module>
         <module>rest-endpoint</module>
         <module>algebra</module>

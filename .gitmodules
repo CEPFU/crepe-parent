@@ -16,8 +16,8 @@
 [submodule "importer"]
 	path = importer
 	url = git@github.com:CEPFU/importer.git
-[submodule "importer_launcher"]
-	path = importer_launcher
+[submodule "importer-launcher"]
+	path = importer-launcher
 	url = git@github.com:CEPFU/importer_launcher.git
 [submodule "nio-tools"]
 	path = nio-tools
@@ -28,8 +28,8 @@
 [submodule "json"]
 	path = json
 	url = git@github.com:CEPFU/json.git
-[submodule "importer_database"]
-	path = importer_database
+[submodule "importer-database"]
+	path = importer-database
 	url = git@github.com:CEPFU/importer_database.git
 [submodule "algebra"]
 	path = algebra
@@ -37,3 +37,6 @@
 [submodule "docker-database"]
 	path = docker-database
 	url = git@github.com:CEPFU/docker-database.git
+[submodule "ionic-front"]
+	path = ionic-front
+	url = git@github.com:CEPFU/ionic-front.git
