@@ -44,7 +44,23 @@ while [[ "$psql_res" != "true" ]]; do
     echo "Waiting for database to be up"
     sleep 1
     # TODO: Extract user/pw/port to parameters?!
-    psql_res="$(psql -p 5432 -h localhost -U ems -c '\echo true' 2> /dev/null)"
+
+    DOCKER_MACHINE=$(which docker-machine)
+
+    if [[ ! "$DOCKER_MACHINE" = "" ]]; then
+        VM=default
+        HOST=$(docker-machine ip $VM 2>/dev/null)
+    else
+        HOST="localhost"
+    fi
+
+    PORT=5432
+    DATABASE=ems
+    USERNAME=ems
+    PASSWORD=ems
+    echo "$HOST:$PORT:$DATABASE:$USERNAME:$PASSWORD" > ~/.pgpass
+    chmod 0600 ~/.pgpass
+    psql_res="$(psql -p $PORT -h $HOST -U ems -c '\echo true' 2> /dev/null)"
 done
 
 cd importer-launcher
