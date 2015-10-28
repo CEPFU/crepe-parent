@@ -183,5 +183,6 @@
         <module>json</module>
         <module>rest-endpoint</module>
         <module>algebra</module>
+        <module>noaa-importer</module>
     </modules>
 </project>

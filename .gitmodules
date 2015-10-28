@@ -40,3 +40,6 @@
 [submodule "ionic-front"]
 	path = ionic-front
 	url = git@github.com:CEPFU/ionic-front.git
+[submodule "noaa-importer"]
+	path = noaa-importer
+	url = git@github.com:lamemate/noaa-importer.git
