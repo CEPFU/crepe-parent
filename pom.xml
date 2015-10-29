@@ -184,5 +184,6 @@
         <module>rest-endpoint</module>
         <module>algebra</module>
         <module>noaa-importer</module>
+        <module>regnie-importer</module>
     </modules>
 </project>
