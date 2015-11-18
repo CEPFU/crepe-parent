@@ -31,6 +31,7 @@
         <jackson.version>2.6.0-rc2</jackson.version>
         <postgis.version>1.3.3</postgis.version>
         <hibernate.version>4.3</hibernate.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
         <hibernate-core.version>${hibernate.version}.10.Final</hibernate-core.version>
         <postgresql.version>9.4-1201-jdbc41</postgresql.version>
     </properties>
