@@ -180,8 +180,6 @@
         <module>dwd-importer</module>
         <module>importer-launcher</module>
         <module>importer-database</module>
-        <module>json</module>
         <module>rest-endpoint</module>
-        <module>algebra</module>
     </modules>
 </project>
