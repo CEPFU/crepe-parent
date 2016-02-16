@@ -42,7 +42,4 @@
 	url = git@github.com:CEPFU/ionic-front.git
 [submodule "noaa-importer"]
 	path = noaa-importer
-	url = git@github.com:lamemate/noaa-importer.git
-[submodule "regnie-importer"]
-	path = regnie-importer
-	url = git@github.com:lamemate/regnie-importer.git
+	url = git@github.com:CEPFU/noaa-importer.git

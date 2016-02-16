@@ -182,7 +182,6 @@
         <module>importer-launcher</module>
         <module>importer-database</module>
         <module>rest-endpoint</module>
-        <module>regnie-importer</module>
         <module>noaa-importer</module>
     </modules>
 </project>
