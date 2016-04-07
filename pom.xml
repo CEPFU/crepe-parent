@@ -177,11 +177,8 @@
         <module>io-adapters</module>
         <module>nio-tools</module>
         <module>importer</module>
-        <module>yahoo-importer</module>
-        <module>dwd-importer</module>
         <module>importer-launcher</module>
         <module>importer-database</module>
         <module>rest-endpoint</module>
-        <module>noaa-importer</module>
     </modules>
 </project>
