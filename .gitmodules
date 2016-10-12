@@ -7,12 +7,6 @@
 [submodule "io-adapters"]
 	path = io-adapters
 	url = git@github.com:CEPFU/io-adapters.git
-[submodule "yahoo-importer"]
-	path = yahoo-importer
-	url = git@github.com:CEPFU/yahoo-importer.git
-[submodule "dwd-importer"]
-	path = dwd-importer
-	url = git@github.com:CEPFU/dwd-importer.git
 [submodule "importer"]
 	path = importer
 	url = git@github.com:CEPFU/importer.git
@@ -25,21 +19,12 @@
 [submodule "rest-endpoint"]
 	path = rest-endpoint
 	url = git@github.com:CEPFU/rest-endpoint.git
-[submodule "json"]
-	path = json
-	url = git@github.com:CEPFU/json.git
 [submodule "importer-database"]
 	path = importer-database
 	url = git@github.com:CEPFU/importer_database.git
-[submodule "algebra"]
-	path = algebra
-	url = git@github.com:CEPFU/algebra.git
 [submodule "docker-database"]
 	path = docker-database
 	url = git@github.com:CEPFU/docker-database.git
 [submodule "ionic-front"]
 	path = ionic-front
 	url = git@github.com:CEPFU/ionic-front.git
-[submodule "noaa-importer"]
-	path = noaa-importer
-	url = git@github.com:CEPFU/noaa-importer.git
